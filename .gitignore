@@ -1,0 +1,7 @@
+# stores unwanted files
+
+# index.html
+
+# ignore images:
+# images/** (ignore everything in this folder)
+# *.jpeg (ignore everyfile that's a jpeg)
