@@ -31,7 +31,7 @@ function recalculate() {
     } else if (modelName == 'CPRG') {
         totalCost = duration * 213;
     } else {
-        console.log('invalid model name')
+        console.log('invalid model name');
     }
     costLabel.innerHTML = totalCost;
 }
@@ -50,15 +50,15 @@ function recalculate() {
 
 // INSERT YOUR CODE HERE
 let modelButton = document.getElementById("model-button");
-modelButton.addEventListener("click", changeModel)
+modelButton.addEventListener("click", changeModel);
 function changeModel(){
     let modelText = document.getElementById("model-text");
     if (modelName == 'XYZ') {
         modelName = 'CPRG';
-        modelText.innerHTML = 'Model CPRG'
+        modelText.innerHTML = 'Model CPRG';
     } else if (modelName == 'CPRG') {
         modelName = 'XYZ';
-        modelText.innerHTML = 'Model XYZ'
+        modelText.innerHTML = 'Model XYZ';
     }
     recalculate();
 }
@@ -76,7 +76,7 @@ function changeModel(){
 
 // INSERT YOUR CODE HERE
 let durationButton = document.getElementById("duration-button");
-durationButton.addEventListener("click",changeDuration)
+durationButton.addEventListener("click",changeDuration);
 function changeDuration(){
     let durationText = document.getElementById("duration-text");
     duration = prompt('Enter new duration');
