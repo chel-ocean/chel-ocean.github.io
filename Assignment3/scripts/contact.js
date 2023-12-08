@@ -5,7 +5,7 @@
 // .style.fontSize, or by updating its .classList.
 
 let submitButton = document.getElementById('submit-button');
-let main = document.getElementById('contact-page')
+let main = document.getElementById('contact-page');
 
 submitButton.addEventListener('click',function(){
     while (main.hasChildNodes()){
@@ -13,5 +13,5 @@ submitButton.addEventListener('click',function(){
     }
     let p = document.createElement('p');
     main.appendChild(p);
-    p.innerHTML = 'Thank you for your message'
-})
+    p.innerHTML = 'Thank you for your message';
+});

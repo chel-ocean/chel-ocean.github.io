@@ -5,6 +5,7 @@
 // When do they need to be reset or updated?
 let costPerDay = 35;
 let numOfDaysSelected = 0;
+let totalCost = 0;
 let weeklyCost = document.getElementById('calculated-cost');
 let clearButton = document.getElementById('clear-button');
 let mon = document.getElementById("monday");
@@ -30,37 +31,37 @@ mon.addEventListener('click',function(){
     if (!mon.classList.contains('clicked')) {
         numOfDaysSelected += 1;
         mon.classList.add('clicked');
-        calculateCost()
+        calculateCost();
     }
-})
+});
 tue.addEventListener('click',function(){
     if (!tue.classList.contains('clicked')) {
         numOfDaysSelected += 1;
         tue.classList.add('clicked');
-        calculateCost()
+        calculateCost();
     }
-})
+});
 wed.addEventListener('click',function(){
     if (!wed.classList.contains('clicked')) {
         numOfDaysSelected += 1;
         wed.classList.add('clicked');
-        calculateCost()
+        calculateCost();
     }
-})
+});
 thu.addEventListener('click',function(){
     if (!thu.classList.contains('clicked')) {
         numOfDaysSelected += 1;
         thu.classList.add('clicked');
-        calculateCost()
+        calculateCost();
     }
-})
+});
 fri.addEventListener('click',function(){
     if (!fri.classList.contains('clicked')) {
         numOfDaysSelected += 1;
         fri.classList.add('clicked');
-        calculateCost()
+        calculateCost();
     }
-})
+});
 
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, 
@@ -74,7 +75,7 @@ clearButton.addEventListener('click',function(){
     fri.classList.remove('clicked');
     weeklyCost.innerHTML = 0;
     numOfDaysSelected = 0;
-})
+});
 
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to 
@@ -85,7 +86,7 @@ half.addEventListener('click',function(){
     half.classList.add('clicked');
     full.classList.remove('clicked');
     calculateCost();
-})
+});
 
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is 
@@ -96,7 +97,7 @@ full.addEventListener('click',function(){
     full.classList.add('clicked');
     half.classList.remove('clicked');
     calculateCost();
-})
+});
 
 /********* calculate *********/
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
